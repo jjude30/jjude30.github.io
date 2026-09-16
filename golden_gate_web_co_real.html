@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Gate Web Co. | Bay Area Web Design</title>
+<meta name="description" content="Golden Gate Web Co. builds modern websites for Bay Area small businesses. Request a free quote today.">
+<style>
+:root{--navy:#081827;--blue:#1769aa;--gold:#d7a84b;--bg:#f6f9fc;--text:#162235;--muted:#637186;--line:#dce5ee;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--text);line-height:1.6;background:var(--white)}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:850;display:flex;align-items:center;gap:10px}
+.logo-mark{background:var(--navy);color:var(--gold);width:36px;height:36px;border-radius:9px;display:grid;place-items:center;font-size:.75rem}
+.links{display:flex;gap:27px;color:#4e5c70;font-size:.93rem}.links a:hover{color:var(--blue)}
+.navbtn,.btn{display:inline-block;border-radius:9px;font-weight:750;padding:12px 18px}.navbtn,.primary{background:var(--navy);color:white}.secondary{border:1px solid var(--line);background:white}
+.hero{padding:105px 0 90px;background:linear-gradient(135deg,#eaf5ff,#fff 65%)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}
+.pill{display:inline-block;padding:6px 12px;border-radius:999px;background:white;border:1px solid #d8e7f5;color:var(--blue);font-size:.8rem;font-weight:800;margin-bottom:20px}
+h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.02;letter-spacing:-.055em;color:var(--navy)}h1 span{color:var(--blue)}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:610px;margin:24px 0 30px}.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.preview{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:0 25px 70px #173b591c}.browser{border:1px solid var(--line);border-radius:12px;overflow:hidden}.dots{height:34px;background:#f3f6f9;padding:10px;display:flex;gap:5px}.dots i{width:7px;height:7px;background:#c7d0da;border-radius:50%}
+.mock{min-height:340px;padding:30px;color:white;background:linear-gradient(145deg,#0a2035,#2a76af)}.mock small{opacity:.7}.mock h2{font-size:2rem;line-height:1.1;margin:55px 0 12px;max-width:300px}.mock p{color:#d9e8f4;font-size:.85rem;margin:0 0 20px}.mock a{background:white;color:var(--navy);padding:9px 13px;border-radius:7px;font-size:.75rem;font-weight:800}
+.section{padding:88px 0}.alt{background:var(--bg)}.heading{text-align:center;max-width:680px;margin:0 auto 45px}.heading h2{font-size:2.35rem;letter-spacing:-.035em;color:var(--navy)}.heading p{color:var(--muted);margin-top:8px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:27px}.icon{width:42px;height:42px;background:#eaf5ff;color:var(--blue);border-radius:10px;display:grid;place-items:center;font-weight:900;margin-bottom:16px}.card h3{color:var(--navy);margin-bottom:7px}.card p{color:var(--muted);font-size:.92rem}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.project{background:white;border:1px solid var(--line);border-radius:16px;overflow:hidden}.project-img{height:210px;padding:25px;color:white;background:linear-gradient(135deg,#10283f,#4b91bd);display:flex;flex-direction:column;justify-content:flex-end}.project:nth-child(2) .project-img{background:linear-gradient(135deg,#273444,#8a704f)}.project-img small{opacity:.7}.project-img h3{font-size:1.5rem}.project-info{padding:20px}.project-info p{color:var(--muted);font-size:.9rem}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.price-card{border:1px solid var(--line);border-radius:16px;padding:27px}.featured{border:2px solid var(--blue);position:relative}.badge{position:absolute;right:17px;top:17px;background:#eaf5ff;color:var(--blue);font-size:.7rem;font-weight:850;padding:5px 8px;border-radius:999px}.price{font-size:2.25rem;font-weight:850;color:var(--navy);margin:8px 0}.price small{font-size:.8rem;color:var(--muted);font-weight:500}.price-card>p{color:var(--muted);font-size:.9rem;margin-bottom:16px}.price-card li{list-style:none;color:#506076;font-size:.88rem;padding:7px 0}.price-card li:before{content:"✓";color:var(--blue);font-weight:900;margin-right:8px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{text-align:center;padding:10px}.num{margin:auto auto 14px;width:40px;height:40px;border-radius:50%;background:var(--navy);color:white;display:grid;place-items:center;font-weight:850}.step h3{font-size:1rem;color:var(--navy)}.step p{font-size:.84rem;color:var(--muted)}
+.contact{background:var(--navy);color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}.contact h2{font-size:2.7rem;line-height:1.1;letter-spacing:-.04em}.contact p{color:#b8c5d4;margin:13px 0 22px}.contact-email{color:#d7a84b;font-weight:750}
+form{background:white;color:var(--text);padding:25px;border-radius:15px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:13px}.field label{display:block;font-size:.78rem;font-weight:750;margin-bottom:5px}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:8px;padding:11px;font:inherit;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue)}textarea{min-height:110px;resize:vertical}.submit{width:100%;border:0;cursor:pointer;background:var(--navy);color:white;padding:13px;border-radius:9px;font-weight:800}
+footer{background:#06111e;color:#9cabbc;padding:27px 0}.footer{display:flex;justify-content:space-between;gap:20px;font-size:.82rem}
+.mobile-menu{display:none}
+@media(max-width:850px){.links{display:none}.mobile-menu{display:block;background:none;border:0;font-size:1.5rem}.hero-grid,.contact-grid,.grid3,.pricing{grid-template-columns:1fr}.work{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}.hero{padding:75px 0}.contact-grid{gap:35px}}
+@media(max-width:520px){.process,.form-row{grid-template-columns:1fr}.section{padding:65px 0}h1{font-size:3rem}.contact h2{font-size:2.1rem}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="logo" href="#"><span class="logo-mark">GG</span> Golden Gate Web Co.</a>
+<div class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
+<a class="navbtn" href="#contact">Get a Quote</a>
+<button class="mobile-menu" aria-label="Menu">☰</button>
+</nav></div></header>
+
+<section class="hero"><div class="container hero-grid">
+<div><div class="pill">BAY AREA WEB DESIGN</div><h1>Turn your business into a <span>better website.</span></h1><p>Golden Gate Web Co. creates modern, mobile-friendly websites for local businesses that want a stronger online presence.</p><div class="buttons"><a class="btn primary" href="#contact">Get a Free Quote</a><a class="btn secondary" href="#work">See Our Work</a></div></div>
+<div class="preview"><div class="browser"><div class="dots"><i></i><i></i><i></i></div><div class="mock"><small>GOLDEN GATE WEB CO.</small><h2>Your business deserves a better website.</h2><p>Clean design. Clear information. More customers.</p><a href="#contact">Request a Quote →</a></div></div></div>
+</div></section>
+
+<section class="section" id="services"><div class="container"><div class="heading"><h2>Built around your business.</h2><p>Everything you need for a professional online presence.</p></div><div class="grid3">
+<div class="card"><div class="icon">01</div><h3>Custom Websites</h3><p>Professional pages designed around your brand, services, and customers.</p></div>
+<div class="card"><div class="icon">02</div><h3>Mobile Design</h3><p>Responsive websites that look great on phones, tablets, and computers.</p></div>
+<div class="card"><div class="icon">03</div><h3>Local SEO</h3><p>Basic search optimization and clear site structure to help customers find you.</p></div>
+<div class="card"><div class="icon">04</div><h3>Lead Generation</h3><p>Clear calls-to-action, contact forms, and quote requests make reaching you easy.</p></div>
+<div class="card"><div class="icon">05</div><h3>Updates</h3><p>Keep your website current with new photos, services, prices, and announcements.</p></div>
+<div class="card"><div class="icon">06</div><h3>Fast & Clean</h3><p>Focused layouts and lightweight code create a simple customer experience.</p></div>
+</div></div></section>
+
+<section class="section alt" id="work"><div class="container"><div class="heading"><h2>Example projects.</h2><p>Sample concepts showing what we can build for local businesses.</p></div><div class="work">
+<div class="project"><div class="project-img"><small>DEMO · SAN MATEO</small><h3>Pacific Auto Detail</h3></div><div class="project-info"><p>Service-focused website with quote requests, services, reviews, and mobile-first design.</p></div></div>
+<div class="project"><div class="project-img"><small>DEMO · SAN FRANCISCO</small><h3>Mission Barber Co.</h3></div><div class="project-info"><p>Modern local-business site focused on services, location, hours, and appointment information.</p></div></div>
+</div></div></section>
+
+<section class="section" id="pricing"><div class="container"><div class="heading"><h2>Simple pricing.</h2><p>Starting prices for common small-business website projects.</p></div><div class="pricing">
+<div class="price-card"><h3>Starter</h3><div class="price">$400 <small>starting at</small></div><p>For a simple online presence.</p><ul><li>1–2 pages</li><li>Mobile-friendly design</li><li>Contact information</li><li>Basic SEO</li><li>1 revision round</li></ul></div>
+<div class="price-card featured"><span class="badge">POPULAR</span><h3>Business</h3><div class="price">$750 <small>starting at</small></div><p>A complete website for growing businesses.</p><ul><li>Up to 5 pages</li><li>Custom design</li><li>Contact form</li><li>Google Maps</li><li>Basic SEO</li><li>2 revision rounds</li></ul></div>
+<div class="price-card"><h3>Custom</h3><div class="price">$1,000+ <small>starting at</small></div><p>For larger or more customized projects.</p><ul><li>Custom page count</li><li>Advanced features</li><li>Custom integrations</li><li>SEO setup</li><li>Project consultation</li></ul></div>
+</div></div></section>
+
+<section class="section alt" id="process"><div class="container"><div class="heading"><h2>How it works.</h2><p>A simple process from first conversation to launch.</p></div><div class="process">
+<div class="step"><div class="num">1</div><h3>Talk</h3><p>Tell us about your business and goals.</p></div>
+<div class="step"><div class="num">2</div><h3>Design</h3><p>We create the structure and visual direction.</p></div>
+<div class="step"><div class="num">3</div><h3>Build</h3><p>We turn the approved design into a working site.</p></div>
+<div class="step"><div class="num">4</div><h3>Launch</h3><p>After approval, your site goes live.</p></div>
+</div></div></section>
+
+<section class="section contact" id="contact"><div class="container contact-grid">
+<div><h2>Let's build something your customers will remember.</h2><p>Tell us a little about your business and what you need. We'll get back to you with next steps.</p><div class="contact-email">contact@goldengatewebco.com</div></div>
+<form id="quoteForm">
+<div class="form-row"><div class="field"><label for="name">Name</label><input id="name" name="name" required></div><div class="field"><label for="business">Business</label><input id="business" name="business" required></div></div>
+<div class="form-row"><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div><div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option>$400–$750</option><option>$750–$1,000</option><option>$1,000+</option><option>Not sure yet</option></select></div></div>
+<div class="field"><label for="message">What do you need?</label><textarea id="message" name="message" required></textarea></div>
+<button class="submit" type="submit">Request a Free Quote →</button>
+</form>
+</div></section>
+</main>
+
+<footer><div class="container footer"><div>© 2026 Golden Gate Web Co.</div><div>Bay Area Web Design · contact@goldengatewebco.com</div></div></footer>
+
+<script>
+document.getElementById("quoteForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  const f=new FormData(this);
+  const subject=encodeURIComponent("New Website Quote Request — "+f.get("business"));
+  const body=encodeURIComponent(
+    "Name: "+f.get("name")+"\n"+
+    "Business: "+f.get("business")+"\n"+
+    "Email: "+f.get("email")+"\n"+
+    "Budget: "+f.get("budget")+"\n\n"+
+    "Project details:\n"+f.get("message")
+  );
+  window.location.href="mailto:contact@goldengatewebco.com?subject="+subject+"&body="+body;
+});
+</script>
+</body>
+</html>
